@@ -12,6 +12,7 @@ kubectl get pods -o wide                 # Liste tous les Pods du namespace cour
 kubectl get pods -A -owide               # -A for --all-namespaces
 kubectl get pods -owide --show-labels    # show labels
 kubectl get pods -l=mytag=my-value       # filter pod on label
+kubectl get pods --field-selector=status.phase=Running # filter by status
 
 # Commandes Describe avec un affichage verbeux
 kubectl describe pods my-pod
@@ -26,3 +27,5 @@ kubectl logs -f my-pod                              # Fait défiler (stream) les
 kubectl get no [node_name] -owide                   # Liste tous les Noeuds de tous les namespaces
 
 kubectl scale deployment [deployment] --replicas=[number]  # Rescale deployment replicas
+
+kubectl apply -f [resource].yaml # applying resource file
