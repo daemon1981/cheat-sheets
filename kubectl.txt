@@ -5,6 +5,7 @@ kubectl config use-context my-cluster-name
 kubectl get namespace                                             # List namespaces on the current cluster
 kubectl config set-context --current --namespace=ggckad-s2        # Enregistre de manière permanente le namespace pour toutes les commandes kubectl suivantes dans ce contexte
 
+kubectl get [resource-type]              # resource-type like service, pod, deployment, ingress
 kubectl get services                     # Liste tous les services d'un namespace
 kubectl get pods --all-namespaces        # Liste tous les Pods de tous les namespaces
 kubectl get pods -o wide                 # Liste tous les Pods du namespace courant, avec plus de détails
