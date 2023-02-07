@@ -9,7 +9,9 @@ kubectl get [resource-type]              # resource-type like service, pod, depl
 kubectl get services                     # Liste tous les services d'un namespace
 kubectl get pods --all-namespaces        # Liste tous les Pods de tous les namespaces
 kubectl get pods -o wide                 # Liste tous les Pods du namespace courant, avec plus de détails
-kubectl get pods -A -owide
+kubectl get pods -A -owide               # -A for --all-namespaces
+kubectl get pods -owide --show-labels    # show labels
+kubectl get pods -l=mytag=my-value       # filter pod on label
 
 # Commandes Describe avec un affichage verbeux
 kubectl describe pods my-pod
