@@ -24,3 +24,5 @@ kubectl logs my-pod -c my-container                 # Affiche les logs d'un cont
 kubectl logs -f my-pod                              # Fait défiler (stream) les logs du pod (stdout)
 
 kubectl get no [node_name] -owide                   # Liste tous les Noeuds de tous les namespaces
+
+kubectl scale deployment [deployment] --replicas=[number]  # Rescale deployment replicas
