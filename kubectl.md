@@ -1,3 +1,4 @@
+```bash
 kubectl config get-contexts
 kubectl config current-context
 kubectl config use-context my-cluster-name
@@ -29,3 +30,4 @@ kubectl get no [node_name] -owide                   # Liste tous les Noeuds de t
 kubectl scale deployment [deployment] --replicas=[number]  # Rescale deployment replicas
 
 kubectl apply -f [resource].yaml # applying resource file
+```
