@@ -5,6 +5,7 @@ terraform show
 terraform plan
 terraform apply -auto-approve
 terraform destroy
+terraform output
 ```
 
 ### Specific commands
